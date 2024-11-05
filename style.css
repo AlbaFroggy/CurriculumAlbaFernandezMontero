@@ -225,12 +225,6 @@ ul.nav__list {
 }
 
 
-
-
-
-
-
-
 /* Section home starts here */
 .home {
     display: grid;
@@ -266,10 +260,11 @@ ul.nav__list {
     font-weight: 700;
     line-height: 1.3;
     line-height: 1;
+    padding-bottom: 1rem;
 }
 
 .home-content h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 
@@ -412,12 +407,12 @@ ul.nav__list {
 
 .about-content li{
     font-size: 2.5rem;
-    text-align: justify;
+    text-align: left;
     padding:1rem;
 }
 .about-content p {
     font-size: 1.8rem;
-    text-align: justify;
+    text-align: left;
 
 }
 
@@ -425,6 +420,72 @@ ul.nav__list {
     font-size: 3rem;
     margin: 3rem 0;
 }
+
+
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 4rem;
+    }
+
+    .about-content li {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.5rem;
+    }
+
+    .about-content .btn {
+        font-size: 2.5rem;
+    }
+
+    .about-img img {
+        width: 40em;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem;
+    }
+
+    .about-content {
+        padding: 1rem;
+    }
+
+    .about-content h2 {
+        font-size: 3rem;
+    }
+
+    .about-content li {
+        font-size: 1.5rem;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-content .btn {
+        font-size: 2rem;
+    }
+
+    .about-img img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -526,10 +587,7 @@ ul.nav__list {
 }
 
 
-
 /* Section studies and experience ends here */
-
-
 
 
 /* Section services starts here */
