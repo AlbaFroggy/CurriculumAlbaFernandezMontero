@@ -35,6 +35,7 @@ html {
 body {
     background-color: var(--bg-color-black);
     color: var(--text-color-white);
+    
 }
 
 
@@ -606,11 +607,11 @@ ul.nav__list {
     color:var(--text-color-black);
     
 }
-.services-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap:2.5rem;
+    gap: 2.5rem;
 }
 .service-box{
     display:flex;
